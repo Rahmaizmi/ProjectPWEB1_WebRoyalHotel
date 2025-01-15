@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kelola Jenis Kamar</title>
+    <!-- Tambahkan Bootstrap -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="styleWebHotelAdmin.css" />
+  </head>
+  <body class="p-0">
+  
+    <!-- Navbar -->
+    <nav class="navbar fixed-top">
+      <div class="header">
+        <div class="content d-flex flex-column align-items-center">
+          <div class="logo">
+            <img
+              src="gambar/logoroyalhotel.png"
+              alt="Logo"
+              style="height: 180px; width: auto;"
+            />
+          </div>
+        </div>
+      </div>
+      <button class="toggle-btn" onclick="toggleNavbar()">☰</button>
+        <ul class="menu">
+            <li><a href="#tentangkami">Tentang Kami</a></li>
+            <li><a href="#kelolaKamar">Kelola Kamar</a></li>
+            <li><a href="#kelolaFasilitas">Kelola Fasilitas</a></li>
+            <li><a href="#dataPemesanan">Pemesanan</a></li>
+        </ul>
+    </nav>
+    <!-- end navbar -->
+
+    <div class="halamanSelamatDatang">
+      <div>
+        <h1>Selamat Datang Admin!</h1>
+        <p>"Kelola layanan dan operasional hotel dengan mudah."</p>
+      </div>
+    </div>
+
+    <!--content-->
+      <div id="tentangkami" class="tentangkami" style="scroll-margin-top: 120px;">
+        <div class="section">
+          <h2 style="color: black">Tentang Kami</h2>
+          <h1 style="color: goldenrod; padding: 20px 0px;">Selamat datang di Royal Hotel!</h1>
+          <p>
+            Tempat di mana kemewahan, kenyamanan, dan pelayanan terbaik bertemu untuk menciptakan pengalaman tak terlupakan. Terletak strategis di jantung kota, Royal Hotel menjadi pilihan sempurna untuk pelancong bisnis maupun wisatawan yang mencari penginapan dengan standar internasional.
+          </p>
+          <p>
+            Dengan desain arsitektur yang modern dan elegan, Royal Hotel menghadirkan suasana yang hangat dan mewah bagi setiap tamunya. Kami menawarkan berbagai fasilitas unggulan yang dirancang untuk memenuhi kebutuhan Anda, mulai dari kamar dan suite yang nyaman, restoran berkelas, hingga fasilitas rekreasi yang lengkap.
+          </p>
+        </div>
+        <div>
+          <img src="gambar/hotel2.jpg" alt="gambar cilok" />
+        </div>
+      </div>
+
+    <div id="kelolaKamar" class="KelolaKamar" style="scroll-margin-top: 120px;">
+      <h3>Kelola Kamar</h3>
+      <div class="btn-wrapper">
+        <a href="tambahDataKamar.html" class="btn btn-tambah">TAMBAH KAMAR</a>
+      </div>
+
+      <div class="card-container pb-0">
+        <div class="card" style="width: 20rem">
+          <h5 class="card-title">Family#1</h5>
+          <img src="gambar/kamar family.jpg" class="card-img-top" alt="..." />
+          <div class="card-body text-center">
+            <!-- Menambahkan text-center di card-body -->
+            <p>ID Kamar : F001</p>
+            <p>Harga : Rp 1000.000,-/malam</p>
+            <a href="#" class="btn btn-edit">EDIT</a>
+            <a href="#" class="btn btn-delete">DELETE</a>
+          </div>
+        </div>
+        <div class="card" style="width: 20rem">
+          <h5 class="card-title">Family#2</h5>
+          <img
+            src="gambar/kamar hotel family.jpg"
+            class="card-img-top"
+            alt="..."
+          />
+          <div class="card-body text-center">
+            <!-- Menambahkan text-center di card-body -->
+            <p>ID Kamar : F002</p>
+            <p>Harga: Rp 900.000,-/malam</p>
+            <a href="#" class="btn btn-edit">EDIT</a>
+            <a href="#" class="btn btn-delete">DELETE</a>
+          </div>
+        </div>
+        <div class="card" style="width: 20rem">
+          <h5 class="card-title">Single#1</h5>
+          <img src="gambar/kamar single.jpg" class="card-img-top" alt="..." />
+          <div class="card-body text-center">
+            <!-- Menambahkan text-center di card-body -->
+            <p>ID Kamar : S001</p>
+            <p>Harga: Rp 500.000,-/malam</p>
+            <a href="#" class="btn btn-edit">EDIT</a>
+            <a href="#" class="btn btn-delete">DELETE</a>
+          </div>
+        </div>
+        <div class="card" style="width: 20rem">
+          <h5 class="card-title">Single#2</h5>
+          <img src="gambar/kamar single.webp" class="card-img-top" alt="..." />
+          <div class="card-body text-center">
+            <p>ID Kamar : S002</p>
+            <p>Rp 550.000,-/malam</p>
+            <!-- Menambahkan text-center di card-body -->
+            <a href="#" class="btn btn-edit">EDIT</a>
+            <a href="#" class="btn btn-delete">DELETE</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="card-container pt-0">
+        <div class="card" style="width: 20rem">
+          <h5 class="card-title">Deluxe#1</h5>
+          <img src="gambar/kamardeluxe1.jpg" class="card-img-top" alt="..." />
+          <div class="card-body text-center">
+            <!-- Menambahkan text-center di card-body -->
+            <p>ID Kamar : D001</p>
+            <p>Harga: Rp 800.000,-/malam</p>
+            <a href="#" class="btn btn-edit">EDIT</a>
+            <a href="#" class="btn btn-delete">DELETE</a>
+          </div>
+        </div>
+        <div class="card" style="width: 20rem">
+          <h5 class="card-title">Deluxe#2</h5>
+          <img src="gambar/kamardeluxe2.jpg" class="card-img-top" alt="..." />
+          <div class="card-body text-center">
+            <!-- Menambahkan text-center di card-body -->
+            <p>ID Kamar : D002</p>
+            <p>Harga: Rp 900.000,-/malam</p>
+            <a href="#" class="btn btn-edit">EDIT</a>
+            <a href="#" class="btn btn-delete">DELETE</a>
+          </div>
+        </div>
+        <div class="card" style="width: 20rem">
+          <h5 class="card-title">Suite#1</h5>
+          <img src="gambar/kamarsuite1.jpg" class="card-img-top" alt="..." />
+          <div class="card-body text-center">
+            <!-- Menambahkan text-center di card-body -->
+            <p>ID Kamar : SU001</p>
+            <p>Harga: Rp 1.300.000,-/malam</p>
+            <a href="#" class="btn btn-edit">EDIT</a>
+            <a href="#" class="btn btn-delete">DELETE</a>
+          </div>
+        </div>
+        <div class="card" style="width: 20rem">
+          <h5 class="card-title">Suite#2</h5>
+          <img src="gambar/kamarsuite2.jpg" class="card-img-top" alt="..." />
+          <div class="card-body text-center">
+            <p>ID Kamar : SU001=2</p>
+            <p>Rp 1.500.000,-/malam</p>
+            <!-- Menambahkan text-center di card-body -->
+            <a href="#" class="btn btn-edit">EDIT</a>
+            <a href="#" class="btn btn-delete">DELETE</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="kelolaFasilitas" class="KelolaFasilitas" style="scroll-margin-top: 120px;">
+      <h3>Kelola Fasilitas</h3>
+      <div class="btn-wrapper">
+        <a href="tambahFasilitas.html" class="btn btn-tambah">TAMBAH FASILITAS</a>
+      </div>
+
+      <div class="card-container pb-0">
+        <div class="card" style="width: 20rem">
+          <h5 class="card-title">Kolam Renang#1</h5>
+          <img src="gambar/kolamrenang.jpg" class="card-img-top" alt="..." />
+          <div class="card-body text-center">
+            <!-- Menambahkan text-center di card-body -->
+            <p>ID Fasilitas: KR001</p>
+            <p>Harga Weekend: Rp 100.000,-</p>
+            <p>Harga Weekday: Rp 80.000,-</p>
+            <p>Jam Operasional: 08.00-20.00 WIB</p>
+            <a href="#" class="btn btn-edit">EDIT</a>
+            <a href="#" class="btn btn-delete">DELETE</a>
+          </div>
+        </div>
+        <div class="card" style="width: 20rem">
+          <h5 class="card-title">Restoran#1</h5>
+          <img
+            src="gambar/restaurantholet.jpg"
+            class="card-img-top"
+            alt="..."
+          />
+          <div class="card-body text-center">
+            <!-- Menambahkan text-center di card-body -->
+            <p>ID Fasilitas: R001</p>
+            <p>Harga Weekend: Rp 100.000,-</p>
+            <p>Harga Weekday: Rp 80.000,-</p>
+            <p>Jam Operasional: 08.00-20.00 WIB</p>
+            <a href="#" class="btn btn-edit">EDIT</a>
+            <a href="#" class="btn btn-delete">DELETE</a>
+          </div>
+        </div>
+        <div class="card" style="width: 20rem">
+          <h5 class="card-title">Gym#1</h5>
+          <img src="gambar/gymhotel.jpg" class="card-img-top" alt="..." />
+          <div class="card-body text-center">
+            <!-- Menambahkan text-center di card-body -->
+            <p>ID Fasilitas: GY001</p>
+            <p>Harga Weekend: Rp 150.000,-</p>
+            <p>Harga Weekday: Rp 120.000,-</p>
+            <p>Jam Operasional: 06.00-22.00 WIB</p>
+            <a href="#" class="btn btn-edit">EDIT</a>
+            <a href="#" class="btn btn-delete">DELETE</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="card-container">
+        <div class="card" style="width: 20rem">
+          <h5 class="card-title">Spa#1</h5>
+          <img src="gambar/spahotel.jpg" class="card-img-top" alt="..." />
+          <div class="card-body text-center">
+            <!-- Menambahkan text-center di card-body -->
+            <p>ID Fasilitas: SP001</p>
+            <p>Harga Weekend: Rp 200.000,-</p>
+            <p>Harga Weekday: Rp 180.000,-</p>
+            <p>Jam Operasional: 10.00-21.00 WIB</p>
+            <a href="#" class="btn btn-edit">EDIT</a>
+            <a href="#" class="btn btn-delete">DELETE</a>
+          </div>
+        </div>
+        <div class="card" style="width: 20rem">
+          <h5 class="card-title">Taman Bermain Anak#1</h5>
+          <img src="gambar/tempatbermainhotel.jpeg" class="card-img-top" alt="..." />
+          <div class="card-body text-center">
+            <!-- Menambahkan text-center di card-body -->
+            <p>ID Fasilitas: TM001</p>
+            <p>Harga Weekend: Rp 75.000,-</p>
+            <p>Harga Weekday: Rp 60.000,-</p>
+            <p>Jam Operasional: 09.00-19.00 WIB</p>
+            <a href="#" class="btn btn-edit">EDIT</a>
+            <a href="#" class="btn btn-delete">DELETE</a>
+          </div>
+      </div>
+      <div class="card" style="width: 20rem">
+        <h5 class="card-title">Ruang Meeting#1</h5>
+        <img src="gambar/RUANG MEETING.jpg" class="card-img-top" alt="..." />
+        <div class="card-body text-center">
+          <!-- Menambahkan text-center di card-body -->
+          <p>ID Fasilitas: RM001</p>
+          <p>Harga Weekend: Rp250.000 net/orang.</p>
+          <p>Harga Weekday: Rp200.000 net/orang.</p>
+          <p>Jam Operasional: 00.00-23.59 WIB</p>
+          <a href="#" class="btn btn-edit">EDIT</a>
+          <a href="#" class="btn btn-delete">DELETE</a>
+        </div>
+      </div>
+    </div>
+
+    <div id="dataPemesanan" class="DataPemesanan" style="scroll-margin-top: 120px;">
+      <h2>Data Pemesanan</h2>
+      <div class="px-5 pb-3">
+        <table>
+          <tr>
+            <th>ID</th>
+            <th>Tanggal Pesan</th>
+            <th>Pemesan</th>
+            <th>Jenis Kamar</th>
+            <th>Check In</th>
+            <th>Check Out</th>
+            <th>Fasilitas (Ya/Tidak)</th>
+          </tr>
+          <tr>
+            <td>001</td>
+            <td>2024-10-25</td>
+            <td>Rahma Izmi Fatihah</td>
+            <td>Deluxe</td>
+            <td>2024-10-26</td>
+            <td>2024-10-29</td>
+            <td>Ya</td>
+          </tr>
+          <tr>
+            <td>002</td>
+            <td>2024-10-24</td>
+            <td>Syalwa Dwi Kirana</td>
+            <td>Suite</td>
+            <td>2024-10-26</td>
+            <td>2024-10-30</td>
+            <td>Ya</td>
+          </tr>
+          <tr>
+            <td>003</td>
+            <td>2024-10-23</td>
+            <td>Aqila Triana Fadhilah</td>
+            <td>Standard</td>
+            <td>2024-10-25</td>
+            <td>2024-10-28</td>
+            <td>Tidak</td>
+          </tr>
+          <tr>
+            <td>004</td>
+            <td>2024-10-22</td>
+            <td>Rija Insan Farij Fadillah</td>
+            <td>Single</td>
+            <td>2024-10-24</td>
+            <td>2024-10-26</td>
+            <td>Tidak</td>
+          </tr>
+          <tr>
+            <td>005</td>
+            <td>2024-10-21</td>
+            <td>Aina Talita Zahran</td>
+            <td>Family</td>
+            <td>2024-10-23</td>
+            <td>2024-10-30</td>
+            <td>Ya</td>
+          </tr>
+          <tr>
+            <td>006</td>
+            <td>2024-10-25</td>
+            <td>Aura Nabil Adiyani</td>
+            <td>Family</td>
+            <td>2024-10-27</td>
+            <td>2024-10-29</td>
+            <td>Ya</td>
+          </tr>
+          <tr>
+            <td>007</td>
+            <td>2024-10-24</td>
+            <td>Marshal Dzaky Yosefira</td>
+            <td>Suite</td>
+            <td>2024-10-30</td>
+            <td>2024-10-30</td>
+            <td>Ya</td>
+          </tr>
+          <tr>
+            <td>008</td>
+            <td>2024-10-23</td>
+            <td>Cintya Anela</td>
+            <td>Deluxe</td>
+            <td>2024-10-25</td>
+            <td>2024-10-28</td>
+            <td>Tidak</td>
+          </tr>
+          <tr>
+            <td>009</td>
+            <td>2024-10-22</td>
+            <td>Livira Ovi Yosefira</td>
+            <td>Single</td>
+            <td>2024-10-22</td>
+            <td>2024-10-26</td>
+            <td>Tidak</td>
+          </tr>
+          <tr>
+            <td>010</td>
+            <td>2024-10-21</td>
+            <td>Fathan Nabil</td>
+            <td>Family</td>
+            <td>2024-10-23</td>
+            <td>2024-10-30</td>
+            <td>Ya</td>
+          </tr>
+          </table>
+      </div>
+    </div>
+
+    <!--end content-->
+
+    <!-- footer -->
+    <div
+      class="footer"
+      style="background-color: goldenrod; color: black; padding: 20px"
+    >
+      &copy; 2025 Royal Hotel. All Rights Reserved
+    </div>
+    <!-- end footer -->
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script>
+function toggleNavbar() {
+  const menu = document.querySelector('.navbar .menu');
+  menu.classList.toggle('active');
+}
+    </script>
+  </body>
+</html>

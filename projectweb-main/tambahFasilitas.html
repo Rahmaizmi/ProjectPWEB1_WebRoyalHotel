@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Tambah Fasilitas</title>
+    <link rel="stylesheet" href="styleTambahKamarFasilitas.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar fixed-top">
+      <div class="header">
+        <div class="content d-flex flex-column align-items-center">
+          <div class="logo">
+            <img
+              src="gambar/logoroyalhotel.png"
+              alt="Logo"
+              style="height: 180px; width: auto"
+            />
+          </div>
+        </div>
+      </div>
+      <button class="toggle-btn" onclick="toggleNavbar()">☰</button>
+      <ul class="menu">
+        <li><a href="WebHotelAdmin.html#tentangkami">Tentang Kami</a></li>
+        <li><a href="WebHotelAdmin.html#kelolaKamar">Kelola Kamar</a></li>
+        <li>
+          <a href="WebHotelAdmin.html#kelolaFasilitas">Kelola Fasilitas</a>
+        </li>
+        <li><a href="WebHotelAdmin.html#dataPemesanan">Pemesanan</a></li>
+      </ul>
+    </nav>
+    <!-- end navbar -->
+
+    <div class="container" id="tambahFasilitas">
+      <h1>Form Tambah Fasilitas</h1>
+      <form method="post" action="WebHotelAdmin.html">
+        <table>
+          <tr>
+            <td><label for="id_fasilitas">Id Fasilitas</label></td>
+            <td>
+              <input
+                type="number"
+                id="id_fasilitas"
+                name="id_fasilitas"
+                required
+              />
+            </td>
+          </tr>
+          <tr>
+            <td><label for="nama_fasilitas">Nama Fasilitas</label></td>
+            <td>
+              <input
+                type="text"
+                id="nama_fasilitas"
+                name="nama_fasilitas"
+                required
+              />
+            </td>
+          </tr>
+          <tr>
+            <td><label for="harga_weekend">Harga Weekend</label></td>
+            <td>
+              <input
+                type="number"
+                id="harga_weekend"
+                name="harga_weekend"
+                required
+              />
+            </td>
+          </tr>
+          <tr>
+            <td><label for="harga_weekday">Harga Weekday</label></td>
+            <td>
+              <input
+                type="number"
+                id="harga_weekday"
+                name="harga_weekday"
+                required
+              />
+            </td>
+          </tr>
+          <tr>
+            <td><label for="kuota">Kuota</label></td>
+            <td><input type="number" id="kuota" name="kuota" required /></td>
+          </tr>
+          <tr>
+            <td><label for="jam_buka">Jam Buka</label></td>
+            <td>
+              <input type="time" id="jam_buka" name="jam_buka" required />
+            </td>
+          </tr>
+          <tr>
+            <td><label for="jam_tutup">Jam Tutup</label></td>
+            <td>
+              <input type="time" id="jam_tutup" name="jam_tutup" required />
+            </td>
+          </tr>
+          <tr>
+            <td colspan="2" style="text-align: center">
+              <input type="submit" value="Submit" />
+            </td>
+          </tr>
+        </table>
+      </form>
+    </div>
+  </body>
+</html>

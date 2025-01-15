@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Tambah Data Kamar</title>
+    <link rel="stylesheet" href="styleTambahKamarFasilitas.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar fixed-top">
+      <div class="header">
+        <div class="content d-flex flex-column align-items-center">
+          <div class="logo">
+            <img
+              src="gambar/logoroyalhotel.png"
+              alt="Logo"
+              style="height: 180px; width: auto"
+            />
+          </div>
+        </div>
+      </div>
+      <button class="toggle-btn" onclick="toggleNavbar()">☰</button>
+      <ul class="menu">
+        <li><a href="WebHotelAdmin.html#tentangkami">Tentang Kami</a></li>
+        <li><a href="WebHotelAdmin.html#kelolaKamar">Kelola Kamar</a></li>
+        <li>
+          <a href="WebHotelAdmin.html#kelolaFasilitas">Kelola Fasilitas</a>
+        </li>
+        <li><a href="WebHotelAdmin.html#dataPemesanan">Pemesanan</a></li>
+      </ul>
+    </nav>
+    <!-- end navbar -->
+
+    <div class="container" id="tambahKamar">
+      <h1>Form Tambah Data Kamar</h1>
+      <form method="post" action="WebHotelAdmin.html">
+        <table>
+          <tr>
+            <td><label for="id">Id Kamar</label></td>
+            <td><input type="number" id="id" name="id" required /></td>
+          </tr>
+          <tr>
+            <td><label for="jenis_kamar">Jenis Kamar</label></td>
+            <td>
+              <select id="jenis_kamar" name="jenis_kamar" required>
+                <option value="family">Family</option>
+                <option value="single">Single</option>
+                <option value="deluxe">Deluxe</option>
+                <option value="suite">Suite</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td><label for="foto_kamar">Foto Kamar</label></td>
+            <td>
+              <input
+                type="file"
+                id="foto_kamar"
+                name="foto_kamar"
+                accept="image/*"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td><label for="harga">Harga</label></td>
+            <td><input type="number" id="harga" name="harga" required /></td>
+          </tr>
+          <tr>
+            <td><label for="fasilitas">Fasilitas</label></td>
+            <td>
+              <textarea
+                id="fasilitas"
+                name="fasilitas"
+                rows="3"
+                required
+              ></textarea>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="2" style="text-align: center">
+              <input type="submit" value="Submit" />
+            </td>
+          </tr>
+        </table>
+      </form>
+    </div>
+  </body>
+</html>
